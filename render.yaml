@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: rieltor-helper-bot
+    env: python
+    buildCommand: ""
+    startCommand: bash start.sh
+    plan: free
+    envVars:
+      - key: TELEGRAM_TOKEN
+        value: твой_токен_бота
